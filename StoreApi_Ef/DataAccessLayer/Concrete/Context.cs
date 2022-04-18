@@ -12,7 +12,7 @@ namespace DataAccessLayer.Concrete
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) 
         {
-            optionsBuilder.UseSqlServer("Server=DESKTOP-0685COT\\BIROL;mssqllocaldb;Database=StoreDb;User ID=sa;Password=birolcoruh;Trusted_Connection=True;");
+            optionsBuilder.UseSqlServer("Server=DESKTOP-0685COT\\BIROL;Database=StoreDb;User ID=sa;Password=birolcoruh;Trusted_Connection=True;");
         }
        
         public DbSet<Product> Products { get; set; }

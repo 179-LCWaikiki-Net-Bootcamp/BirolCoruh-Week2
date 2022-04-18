@@ -6,8 +6,6 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer.Abstract
 {
-    internal class IGenericDal
-    {
         public interface IGenericDal<T> where T : class
         {
             void Insert(T item);
@@ -16,5 +14,4 @@ namespace DataAccessLayer.Abstract
             List<T> GetAll();
             T GetById(int id);
         }
-    }
 }
