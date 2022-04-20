@@ -9,6 +9,6 @@ namespace DataAccessLayer.Abstract
 {
     public interface IProductDal : IGenericDal<Product>
     {
-        Task<List<Product>> GetProductsWithCategory();
+        List<Product> GetProductsWithCategory(int categoryId);
     }
 }

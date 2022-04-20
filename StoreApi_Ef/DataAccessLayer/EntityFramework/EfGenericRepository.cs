@@ -43,9 +43,6 @@ namespace DataAccessLayer.EntityFramework
             c.SaveChanges();
         }
 
-        IQueryable<T> IGenericDal<T>.GetAll()
-        {
-            throw new NotImplementedException();
-        }
+      
     }
 }
