@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace BusinessLayer.Services
 {
-    internal interface IGenericService<T> where T : class
+    public interface IGenericService<Entity,Dto> 
     {
-        Task InsertAsync(T item);
-        Task UpdateAsync(T item);
-        Task DeleteAsync(T item);
-        IQueryable<T> GetAll();
-        Task<T> GetByIdAsync(int id);
+        void AddService(Dto item);
+        void UpdateService(Dto item);
+        void DeleteService(int id);
+        List<Dto> GetAllService();
+        void GetByIdService(int id);
     }
 }

@@ -1,4 +1,5 @@
 ﻿using Dtos;
+using EntityLayer.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,8 +8,8 @@ using System.Threading.Tasks;
 
 namespace BusinessLayer.Services
 {
-    internal interface IProductService
+    public interface IProductService:IGenericService<Category,ProductDto>
     {
-        Task<CustomResponseDto<List<ProductWithCategoryDto>>> GetProductsWithCategory();
+        CustomResponseDto<List<ProductWithCategoryDto>> GetProductsWithCategoryDto(int categoryId);
     }
 }
