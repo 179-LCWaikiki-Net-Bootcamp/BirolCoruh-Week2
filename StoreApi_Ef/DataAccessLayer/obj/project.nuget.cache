@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "FqE7UjqKCwx8ceepcpb0g2F4QYuMGqaehycI4boMxPmMd8xRSyk4Iwp+0J6PT0fkA23GqQCJmfk3ALQsc0RPfw==",
+  "dgSpecHash": "bVK0HBEi4wIlhxjDOfMhVbknS5tAGMRsCtD3wJGePCiikFDc0LMy/g7D9vudLRMeCtmpVAffipPk2JrTjWPgUg==",
   "success": true,
   "projectFilePath": "C:\\Users\\birol\\source\\repos\\BirolCoruh-Week2\\StoreApi_Ef\\DataAccessLayer\\DataAccessLayer.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\birol\\.nuget\\packages\\fluentvalidation\\10.4.0\\fluentvalidation.10.4.0.nupkg.sha512",
     "C:\\Users\\birol\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\birol\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\birol\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",

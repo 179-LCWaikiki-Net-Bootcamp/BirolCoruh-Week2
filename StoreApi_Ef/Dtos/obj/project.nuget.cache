@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "Y53i2lav4d1nMf3I1Lk5W4z4/cW9e3KY0geGckefLFLZUwzVjg+U9eSqNZSSB4RNk+ui/eSqP0PylE1W/oyBQw==",
+  "dgSpecHash": "KJbev1S5yQxgyPwxkdgdd1yO5dCDAegjjJYvC8A+nubdj9sKEV0lnVO/7rsOdELCy5eXqUkxLr6kGEfTyMIhXg==",
   "success": true,
   "projectFilePath": "C:\\Users\\birol\\source\\repos\\BirolCoruh-Week2\\StoreApi_Ef\\Dtos\\Dtos.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\birol\\.nuget\\packages\\fluentvalidation\\10.4.0\\fluentvalidation.10.4.0.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "Y0dGQmYzqOh9MqKO3iacNv+ZNxbu9PrTLLPImGQTopv33GE3jRLj/9WBRCtARW20hLx2h6euISusk4zaEUVAgg==",
+  "dgSpecHash": "frzv4MFGtEoukU3mg64EnpgMlktRf+OwhWCJ1uQ0ImkbG4sYa+QyqLoVAjI6Z2DDnLleTrBZMJFzBsyXXHLCHw==",
   "success": true,
   "projectFilePath": "C:\\Users\\birol\\source\\repos\\BirolCoruh-Week2\\StoreApi_Ef\\EntityLayer\\EntityLayer.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\birol\\.nuget\\packages\\fluentvalidation\\10.4.0\\fluentvalidation.10.4.0.nupkg.sha512"
+  ],
   "logs": []
 }
