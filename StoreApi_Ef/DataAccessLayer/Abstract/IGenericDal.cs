@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Mvc;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,5 +14,6 @@ namespace DataAccessLayer.Abstract
             void Delete(T item);
             List<T> GetAll();
             T GetById(int id);
-        }
+           IEnumerable<T> Search([FromQuery] T search);
+    }
 }

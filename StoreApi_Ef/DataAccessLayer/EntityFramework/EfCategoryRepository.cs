@@ -9,12 +9,10 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer.EntityFramework
 {
-    public class EfCategoryRepository : EfGenericRepository<Category>, ICategoryDal
+    public class EfCategoryRepository : EfGenericRepository<Category>,ICategoryDal
     {
-        public Category GetSingleCategoryByProductAsync(int productId)
+        public EfCategoryRepository(Context context) : base(context)
         {
-            using var c = new Context();
-            return c.Categories.Single(c => c.Products.Any(p => p.Id == productId));
         }
     }
 }

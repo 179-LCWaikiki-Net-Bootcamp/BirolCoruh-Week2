@@ -1,5 +1,6 @@
 ﻿using DataAccessLayer.Abstract;
 using DataAccessLayer.Concrete;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,41 +9,52 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer.EntityFramework
 {
-    public class EfGenericRepository<T>:IGenericDal<T> where T : class
+    public class EfGenericRepository<T>:IGenericDal<T> where T : class 
     {
+        Context _context;
+        public EfGenericRepository(Context context)
+        {
+            _context = context;
+        }
         public void Delete(T item)
         {
-            using var c = new Context();
-            c.Remove(item);
-            c.SaveChanges();
+            
+            _context.Remove(item);
+            _context.SaveChanges();
         }
 
         public List<T> GetAll()
         {
-            using var c = new Context();
-            return c.Set<T>().ToList(); 
+            
+            return _context.Set<T>().ToList(); 
         }
 
         public T GetById(int id)
         {
-            using var c = new Context();
-            return c.Set<T>().Find(id);
+            
+            return _context.Set<T>().Find(id);
         }
 
         public void Insert(T item)
         {
-            using var c = new Context();
-            c.Add(item);
-            c.SaveChanges();
+            
+            _context.Add(item);
+            _context.SaveChanges();
         }
 
         public void Update(T item)
         {
-            using var c = new Context();
-            c.Update(item);
-            c.SaveChanges();
+           
+            _context.Update(item);
+            _context.SaveChanges();
         }
+       
+        public IEnumerable<T> Search([FromQuery] T search)
+        {
 
-      
+            IQueryable<T> query = _context.Set<T>();
+
+            return  query.ToList();
+        }
     }
 }

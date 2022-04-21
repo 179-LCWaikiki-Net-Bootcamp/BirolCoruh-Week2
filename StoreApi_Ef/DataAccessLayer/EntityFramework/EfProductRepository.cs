@@ -11,11 +11,8 @@ namespace DataAccessLayer.EntityFramework
 {
     public class EfProductRepository : EfGenericRepository<Product>, IProductDal
     {
-        public List<Product> GetProductsWithCategory(int categoryId)
+        public EfProductRepository(Context context) : base(context)
         {
-            using var c = new Context();
-           
-            return c.Products.Where(x => x.CategoryId == categoryId ).ToList();
         }
     }
 }

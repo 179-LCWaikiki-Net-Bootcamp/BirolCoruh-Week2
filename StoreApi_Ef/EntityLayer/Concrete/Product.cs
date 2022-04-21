@@ -10,7 +10,7 @@ namespace EntityLayer.Concrete
 {
     public class Product
     {
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+      
         public int Id { get; set; }
         public string Name { get; set; }
         public int Stock { get; set; }

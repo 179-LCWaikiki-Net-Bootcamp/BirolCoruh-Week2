@@ -15,9 +15,10 @@ namespace BusinessLayer.Mapping
         {
             CreateMap<Product, ProductDto>().ReverseMap();
             CreateMap<Category, CategoryDto>().ReverseMap();
-            CreateMap<ProductUpdateDto, Product>();
-            CreateMap<Product, ProductWithCategoryDto>();
-            CreateMap<Category, CategoryWithProductDto>();
+            CreateMap<Product, ProductAddDto>().ReverseMap();
+            CreateMap<Category,CategoryAddDto >().ReverseMap();
+            CreateMap<Product, ProductUpdateDto>().ReverseMap();
+            CreateMap<Category, CategoryUpdateDto>().ReverseMap();
         }
         
     }

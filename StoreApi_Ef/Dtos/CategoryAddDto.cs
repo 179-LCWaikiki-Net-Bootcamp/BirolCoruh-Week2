@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace Dtos
 {
-    public class CategoryWithProductDto:CategoryDto
+    public class CategoryAddDto
     {
-        public ProductDto Product{ get; set; }
+        public string Name { get; set; }
+        public string Description { get; set; }
     }
 }
