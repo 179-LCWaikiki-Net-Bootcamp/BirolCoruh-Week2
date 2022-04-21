@@ -5248,11 +5248,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\birol\\source\\repos\\BirolCoruh-Week2\\StoreApi_Ef\\BusinessLayer\\BusinessLayer.csproj",
+      "projectUniqueName": "C:\\Users\\birol\\OneDrive\\Masaüstü\\yedekler\\birolcoruh-Homework2\\StoreApi_Ef\\BusinessLayer\\BusinessLayer.csproj",
       "projectName": "BusinessLayer",
-      "projectPath": "C:\\Users\\birol\\source\\repos\\BirolCoruh-Week2\\StoreApi_Ef\\BusinessLayer\\BusinessLayer.csproj",
+      "projectPath": "C:\\Users\\birol\\OneDrive\\Masaüstü\\yedekler\\birolcoruh-Homework2\\StoreApi_Ef\\BusinessLayer\\BusinessLayer.csproj",
       "packagesPath": "C:\\Users\\birol\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\birol\\source\\repos\\BirolCoruh-Week2\\StoreApi_Ef\\BusinessLayer\\obj\\",
+      "outputPath": "C:\\Users\\birol\\OneDrive\\Masaüstü\\yedekler\\birolcoruh-Homework2\\StoreApi_Ef\\BusinessLayer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\birol\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5269,14 +5269,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\birol\\source\\repos\\BirolCoruh-Week2\\StoreApi_Ef\\DataAccessLayer\\DataAccessLayer.csproj": {
-              "projectPath": "C:\\Users\\birol\\source\\repos\\BirolCoruh-Week2\\StoreApi_Ef\\DataAccessLayer\\DataAccessLayer.csproj"
+            "C:\\Users\\birol\\OneDrive\\Masaüstü\\yedekler\\birolcoruh-Homework2\\StoreApi_Ef\\DataAccessLayer\\DataAccessLayer.csproj": {
+              "projectPath": "C:\\Users\\birol\\OneDrive\\Masaüstü\\yedekler\\birolcoruh-Homework2\\StoreApi_Ef\\DataAccessLayer\\DataAccessLayer.csproj"
             },
-            "C:\\Users\\birol\\source\\repos\\BirolCoruh-Week2\\StoreApi_Ef\\Dtos\\Dtos.csproj": {
-              "projectPath": "C:\\Users\\birol\\source\\repos\\BirolCoruh-Week2\\StoreApi_Ef\\Dtos\\Dtos.csproj"
+            "C:\\Users\\birol\\OneDrive\\Masaüstü\\yedekler\\birolcoruh-Homework2\\StoreApi_Ef\\Dtos\\Dtos.csproj": {
+              "projectPath": "C:\\Users\\birol\\OneDrive\\Masaüstü\\yedekler\\birolcoruh-Homework2\\StoreApi_Ef\\Dtos\\Dtos.csproj"
             },
-            "C:\\Users\\birol\\source\\repos\\BirolCoruh-Week2\\StoreApi_Ef\\EntityLayer\\EntityLayer.csproj": {
-              "projectPath": "C:\\Users\\birol\\source\\repos\\BirolCoruh-Week2\\StoreApi_Ef\\EntityLayer\\EntityLayer.csproj"
+            "C:\\Users\\birol\\OneDrive\\Masaüstü\\yedekler\\birolcoruh-Homework2\\StoreApi_Ef\\EntityLayer\\EntityLayer.csproj": {
+              "projectPath": "C:\\Users\\birol\\OneDrive\\Masaüstü\\yedekler\\birolcoruh-Homework2\\StoreApi_Ef\\EntityLayer\\EntityLayer.csproj"
             }
           }
         }

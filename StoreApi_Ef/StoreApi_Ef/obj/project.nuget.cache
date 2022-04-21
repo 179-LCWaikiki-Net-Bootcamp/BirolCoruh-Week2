@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zdJZj9J/Av7KhHJnsaEgcqkIbxqZ135DZ5VBgHaxZZKlyfmMq+1jFD68Tz85gc+Gha9XBkX2XIyxMZAIIp0Fbg==",
+  "dgSpecHash": "L02eeLI9KBPycY+b2YRlkVJCxphs7hd0wTML5vjq0j01HGNOEodnSmWw0ZCgt8CvB1E98wTP7qrpLhl3F31ICA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\birol\\source\\repos\\BirolCoruh-Week2\\StoreApi_Ef\\StoreApi_Ef\\StoreApi_Ef.csproj",
+  "projectFilePath": "C:\\Users\\birol\\OneDrive\\Masaüstü\\yedekler\\birolcoruh-Homework2\\StoreApi_Ef\\StoreApi_Ef\\StoreApi_Ef.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\birol\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
     "C:\\Users\\birol\\.nuget\\packages\\fluentvalidation\\10.4.0\\fluentvalidation.10.4.0.nupkg.sha512",
