@@ -21,9 +21,9 @@ namespace StoreApi_Ef.Controllers
         [HttpPost]
         public IActionResult InsertCategory(CategoryAddDto category)
         {
-            CategoryDto categoryDto = _categoryService.AddService(category);
-
-            return Ok(categoryDto);
+           _categoryService.AddService(category);
+            
+            return Ok();
           
         }
 
@@ -45,13 +45,11 @@ namespace StoreApi_Ef.Controllers
         [HttpPut("{id}")]
         public IActionResult UpdateCategory(int id, [FromBody] CategoryUpdateDto category)
         {
-
-            var result = _categoryService.GetByIdService(id);
+            var result = _categoryService.GetByIdService(category.Id);
             if (result == null)
             {
                 return NotFound("Kategori Bulunamadı");
             }
-       
             _categoryService.UpdateService(id,category);
             return Ok();
         }
@@ -78,10 +76,8 @@ namespace StoreApi_Ef.Controllers
         [HttpGet("search")]
         public ActionResult<CategoryDto> GetCategoryBySearch([FromQuery] Category query)
         {
-
             IEnumerable<CategoryDto> categories = _categoryService.Search(query);
             return Ok(categories);
-
         }
     }
 }

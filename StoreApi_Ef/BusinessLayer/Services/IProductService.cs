@@ -11,11 +11,11 @@ namespace BusinessLayer.Services
 {
     public interface IProductService
     {
-        void AddService(ProductAddDto item);
-        void UpdateService(ProductUpdateDto item);
+        ProductDto AddService(ProductAddDto item);
+        void UpdateService(int id, ProductUpdateDto item);
         void DeleteService(int id);
         List<ProductDto> GetAllService();
-        Product GetByIdService(int id);
-        IEnumerable<ProductDto> Search([FromQuery] ProductDto search);
+        ProductDto GetByIdService(int id);
+        IEnumerable<ProductDto> Search([FromQuery] Product search);
     }
 }

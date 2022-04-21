@@ -13,7 +13,7 @@ namespace BusinessLayer.Mapping
     {
         public MapProfile()
         {
-            CreateMap<Product, ProductDto>().ReverseMap();
+            CreateMap<Product, ProductDto>().ForMember(x => x.CategoryName, x => x.MapFrom(x => x.Category.Name));
             CreateMap<Category, CategoryDto>().ReverseMap();
             CreateMap<Product, ProductAddDto>().ReverseMap();
             CreateMap<Category,CategoryAddDto >().ReverseMap();

@@ -1,4 +1,7 @@
-﻿using BusinessLayer.Services;
+﻿using AutoMapper;
+using BusinessLayer.Exceptions;
+using BusinessLayer.Services;
+using DataAccessLayer.Abstract;
 using Dtos;
 using EntityLayer.Concrete;
 using Microsoft.AspNetCore.Mvc;
@@ -12,34 +15,56 @@ namespace BusinessLayer.Manager
 {
     public class ProductManager : IProductService
     {
-        public void AddService(ProductAddDto item)
+        IProductDal _productDal;
+        IMapper _mapper;
+        public ProductManager(IProductDal productDal, IMapper mapper)
         {
-            throw new NotImplementedException();
+            _productDal = productDal;
+            _mapper = mapper;
+        }
+        public ProductDto AddService(ProductAddDto item)
+        {
+            Product product = _mapper.Map<ProductAddDto, Product>(item);
+            _productDal.Insert(product);
+
+            return _mapper.Map<Product, ProductDto>(product);
         }
 
         public void DeleteService(int id)
         {
-            throw new NotImplementedException();
+            Product Product = _productDal.GetById(id);
+            if (Product == null)
+            {
+                throw new NotFoundException("SilineceK ürün bulunamadı");
+            }
+            _productDal.Delete(Product);
         }
 
         public List<ProductDto> GetAllService()
         {
-            throw new NotImplementedException();
+            return _mapper.Map<List<Product>, List<ProductDto>>(_productDal.GetAll());
         }
 
-        public Product GetByIdService(int id)
+        public ProductDto GetByIdService(int id)
         {
-            throw new NotImplementedException();
+            return _mapper.Map<Product, ProductDto>(_productDal.GetById(id));
         }
 
-        public IEnumerable<ProductDto> Search([FromQuery] ProductDto search)
+        public IEnumerable<ProductDto> Search([FromQuery] Product search)
         {
-            throw new NotImplementedException();
+            IEnumerable<Product> product = _productDal.Search(search);
+
+            return _mapper.Map<IEnumerable<Product>, IEnumerable<ProductDto>>(product);
         }
 
-        public void UpdateService(ProductUpdateDto item)
+        public void UpdateService(int id, ProductUpdateDto item)
         {
-            throw new NotImplementedException();
+            Product Product = _productDal.GetById(id);
+
+            Product updateProduct = _mapper.Map(item, Product);
+
+            _productDal.Update(updateProduct);
+
         }
     }
 }

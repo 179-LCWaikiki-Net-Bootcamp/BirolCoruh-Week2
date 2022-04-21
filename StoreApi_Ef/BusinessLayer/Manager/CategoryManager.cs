@@ -36,7 +36,7 @@ namespace BusinessLayer.Manager
             Category category = _categoryDal.GetById(id);
             if (category == null)
             {
-               throw new NotFoundException("SilineceK ürün bulunamadı");
+               throw new NotFoundException("SilineceK kategori bulunamadı");
             }
             _categoryDal.Delete(category);
         }
